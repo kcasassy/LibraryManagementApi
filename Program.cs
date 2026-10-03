@@ -1,4 +1,5 @@
 using LibraryManagementApi.Data;
+using LibraryManagementApi.Middleware;
 using LibraryManagementApi.Repositories;
 using LibraryManagementApi.Services;
 using Microsoft.EntityFrameworkCore;
@@ -27,6 +28,9 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
+
+// Global Exception Handling
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 if (app.Environment.IsDevelopment())
 {
