@@ -1,5 +1,4 @@
 using LibraryManagementApi.Data;
-using LibraryManagementApi.Middleware;
 using LibraryManagementApi.Repositories;
 using LibraryManagementApi.Services;
 using Microsoft.EntityFrameworkCore;
@@ -18,20 +17,12 @@ builder.Services.AddScoped<IBookService, BookService>();
 builder.Services.AddScoped<IMemberService, MemberService>();
 builder.Services.AddScoped<ILoanService, LoanService>();
 
-// Register Services
-builder.Services.AddScoped<IBookService, BookService>();
-builder.Services.AddScoped<IMemberService, MemberService>();
-builder.Services.AddScoped<ILoanService, LoanService>();
-
-// Add Controllers
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-
-app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 if (app.Environment.IsDevelopment())
 {
