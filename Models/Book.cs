@@ -1,4 +1,4 @@
-﻿namespace LibraryManagementApi.Models
+namespace LibraryManagementApi.Models
 {
     public class Book
     {
@@ -15,5 +15,7 @@
         public int TotalCopies { get; set; }
 
         public int AvailableCopies { get; set; }
+
+        public ICollection<Loan> Loans { get; set; } = new List<Loan>();
     }
 }
