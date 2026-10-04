@@ -1,6 +1,6 @@
 ﻿namespace LibraryManagementApi.DTO
 {
-    public class Books
+    public class Member
     {
     }
 }
