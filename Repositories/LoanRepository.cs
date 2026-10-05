@@ -1,5 +1,5 @@
-﻿using LibraryManagementApi.Data;
-using LibraryManagementApi.Models;
+﻿using LibraryManagementApi.Models.Data;
+using LibraryManagementApi.Models.Domain;
 using Microsoft.EntityFrameworkCore;
 
 namespace LibraryManagementApi.Repositories

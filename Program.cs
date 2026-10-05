@@ -1,4 +1,4 @@
-using LibraryManagementApi.Data;
+using LibraryManagementApi.Models.Data;
 using LibraryManagementApi.Repositories;
 using LibraryManagementApi.Services;
 using Microsoft.EntityFrameworkCore;

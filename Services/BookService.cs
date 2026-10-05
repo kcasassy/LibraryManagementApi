@@ -1,5 +1,5 @@
-﻿using LibraryManagementApi.DTO;
-using LibraryManagementApi.Models;
+﻿using LibraryManagementApi.Models.DTO;
+using LibraryManagementApi.Models.Domain;
 using LibraryManagementApi.Repositories;
 
 namespace LibraryManagementApi.Services

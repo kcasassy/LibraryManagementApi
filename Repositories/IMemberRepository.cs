@@ -1,4 +1,4 @@
-﻿using LibraryManagementApi.Models;
+﻿using LibraryManagementApi.Models.Domain;
 
 namespace LibraryManagementApi.Repositories
 {

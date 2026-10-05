@@ -1,4 +1,4 @@
-﻿namespace LibraryManagementApi.Models
+﻿namespace LibraryManagementApi.Models.Domain
 {
     public class Member
     {
